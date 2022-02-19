@@ -1,0 +1,26 @@
+<nav class="blue darken-4">
+  <div class="nav-wrapper">
+    <a href="/pages/allEvents" class="brand-logo">Global Events</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+
+      {{#if isIndex}}
+      <li class="active"><a href="/pages/protected">My Events</a></li>
+      {{else}}
+      <li><a href="/pages/protected">My Events</a></li>
+      {{/if}}
+
+      {{#if isCreate}}
+      <li class="active"><a href="/pages/create">Create</a></li>
+      {{else}}
+      <li><a href="/pages/create">Create</a></li>
+      {{/if}}
+
+      {{#if isCreate}}
+      <li class="active"><a href="/pages/profile">Profile</a></li>
+      {{else}}
+      <li><a href="/pages/profile">Profile</a></li>
+      {{/if}}
+
+    </ul>
+  </div>
+</nav>

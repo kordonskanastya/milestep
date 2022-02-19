@@ -1,0 +1,32 @@
+<form method="POST" action="/pages/update2" >
+  <h2>Update Event</h2>
+
+  <div class="input-field">
+    <input type="text" name="title" value={{body.title}} placeholder="Event title">
+  </div>
+
+  <div class="input-field">
+    <input type="text" name="text" value={{body.text}}
+      placeholder="Event description">
+  </div>
+
+  <div class="input-field">
+    <input type="date" name="dataOfEvent"
+       value={{body.date}}
+       min="2022-01-01" max="3001-12-31" required>
+  </div>
+
+  <div class="input-field">
+    <input type="time" name="time" value={{body.time}} required>
+  </div>
+
+  <input type="hidden" value="{{body.id}}" name="id">
+  <button type="submit" class="btn">Update</button>
+</form>
+
+<br>
+
+<form action="/pages/delete" method="POST">
+  <input type="hidden" value="{{body.id}}" name="id">
+  <button type="submit" class="btn">Delete</button>
+</form>

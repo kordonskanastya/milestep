@@ -1,0 +1,24 @@
+<h2>Global Events page</h2>
+
+{{#if allEvents.length}}
+<ul>
+  {{#each allEvents}}
+  <li class="event">
+    <form action="/pages/allEvents/submit" method="POST">
+      <label>
+        <input type="checkbox">
+        <span>{{title}}</span>
+        <span>{{text}}</span>
+        <span>{{date}}</span>
+        <span>{{time}}</span>
+
+        <input type="hidden" value="{{id}}" name="id">
+        <button class="btn btn-small" type="submit">Join</button>
+      </label>
+    </form>
+  </li>
+  {{/each}}
+</ul>
+{{else}}
+<p>No Global Events!</p>
+{{/if}}

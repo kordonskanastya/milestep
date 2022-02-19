@@ -1,0 +1,41 @@
+<form action="/pages/profile" method="POST">
+  <h2>Profile</h2>
+
+  <div class="input-field">
+    <label for="firstName">First Name</label>
+    <br>
+    <input type="text" name="firstName" value={{body.firstname}} id="firstName">
+  </div>
+
+  <div class="input-field">
+    <label for="lastName">Last Name</label>
+    <br>
+    <input type="text" name="lastName" value={{body.lastname}} id="lastName">
+  </div>
+
+  <div class="input-field">
+    <label for="interests">Interests</label>
+    <br>
+    <input type="text" name="interests" value={{body.interests}} id="interests">
+  </div>
+
+  <div class="input-field">
+    <label for="job">Job</label>
+    <br>
+    <input type="text" name="job" value={{body.job}} id="job">
+  </div>
+
+  <div class="input-field">
+    <label for="univDegree">University Degree</label>
+    <br>
+    <input type="text" name="univDegree" value={{body.university_degree}} id="univDegree">
+  </div>
+
+  <div class="input-field">
+    <label for="description">About Yourself</label>
+    <br>
+    <input type="text" name="description" value={{body.description}} id="description">
+  </div>
+
+  <button type="submit" class="btn">Submit</button>
+</form>

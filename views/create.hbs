@@ -1,0 +1,23 @@
+<form action="/pages/create" method="POST">
+  <h2>Create Event</h2>
+
+  <div class="input-field">
+    <input type="text" name="title" placeholder="Event title">
+  </div>
+
+  <div class="input-field">
+    <input type="text" name="text" placeholder="Event description">
+  </div>
+
+  <div class="input-field">
+    <input type="date" name="dataOfEvent"
+       value="2022-02-19"
+       min="2022-01-01" max="3001-12-31" required>
+  </div>
+
+  <div class="input-field">
+    <input type="time" name="time" value="13:00" required>
+  </div>
+
+  <button type="submit" class="btn">Create</button>
+</form>
